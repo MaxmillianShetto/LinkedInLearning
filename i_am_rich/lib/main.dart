@@ -13,10 +13,11 @@ void main() {
             // This is one way of specifying the shade of the color you want
             backgroundColor: Colors.blueGrey[900],
           ),
+          // Loading a network image and centering it
           body: const Center(
             child: Image(
-              image: NetworkImage(
-                'https://www.referenseo.com/wp-content/uploads/2019/03/image-attractive.jpg',
+              image: AssetImage(
+                'images/diamond.png',
               ),
             ),
           )),
