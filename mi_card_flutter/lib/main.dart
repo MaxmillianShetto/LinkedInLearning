@@ -11,38 +11,82 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-            child: Column(
-          // mainAxisSize: MainAxisSize.min, this minimizes vertical height to height of items
-          // verticalDirection: VerticalDirection.down, This arranges content from bottom to top
-          //    To change the spacing arrange together
-          //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          // Stretches children across the screen
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Container(
-              height: 100.0,
-              color: Colors.white,
-              child: Text('Container 1'),
-            ),
-
-            // Putting some spacing in between
-            SizedBox(height: 20.0,),
-            Container(
-              height: 100.0,
-              color: Colors.blue,
-              child: Text('Container 2'),
-            ),
-            Container(
-              height: 100.0,
-              color: Colors.red,
-              child: Text('Container 3'),
-            ),
-            Container(
-              width: double.infinity,
-              height: 100,
-            )
-          ],
-        )),
+          child: Column(
+            children: <Widget>[
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage(
+                  'images/max.png',
+                ),
+              ),
+              Text(
+                'Maxmillian Shetto',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico',
+                ),
+              ),
+              Text(
+                'SOFTWARE ENGINEER',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.teal[100],
+                  fontFamily: 'SourceSansPro',
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal.shade900,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('+255 763 355 631',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0,
+                    ),)
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal.shade900,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('max.shetto@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.0,
+                      ),)
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
