@@ -3,14 +3,14 @@ description: A new Flutter application.
 
 version: 1.0.0+1
 
-environment:
-  sdk: ">=3.0.0-76.0.dev <4.0.0"
+  environment:
+    sdk: ">=3.0.0-76.0.dev <4.0.0"
 
-dependencies:
-  flutter:
-    sdk: flutter
+  dependencies:
+    flutter:
+      sdk: flutter
 
-  cupertino_icons: ^1.0.2
+    cupertino_icons: ^1.0.2
   rflutter_alert: ^2.0.0
 
 dev_dependencies:
